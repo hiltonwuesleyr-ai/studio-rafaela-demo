@@ -11,10 +11,15 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header class="nav-wrap">
+  <div class="site-loader" id="siteLoader" aria-hidden="true">
+    <div class="loader-mark">RD</div>
+    <div class="loader-copy">Studio Rafaela Dalmolin</div>
+  </div>
+
+  <header class="nav-wrap" id="siteNav">
     <nav class="nav container">
       <a class="brand" href="#inicio"><span class="brand-mark">RD</span><span><strong>Rafaela Dalmolin</strong><small>Studio</small></span></a>
-      <div class="nav-links"><a href="#experiencias">Experiências</a><a href="#studio">O Studio</a><a href="#rafaela">Rafaela</a><a href="#contato">Contato</a></div>
+      <div class="nav-links"><a href="#experiencias">Experiências</a><a href="#headspa">Head Spa</a><a href="#studio">O Studio</a><a href="#rafaela">Rafaela</a><a href="#contato">Contato</a></div>
       <a class="btn btn-small" href="https://wa.me/5555999761844?text=Ol%C3%A1%2C%20Rafaela!%20Gostaria%20de%20agendar%20uma%20experi%C3%AAncia%20no%20Studio." target="_blank" rel="noopener">Agendar</a>
     </nav>
   </header>
@@ -26,12 +31,12 @@
         <span class="eyebrow">São Gabriel • RS</span>
         <h1>Sua beleza merece<br><em>uma experiência exclusiva.</em></h1>
         <p>Técnica, cuidado e bem-estar em experiências pensadas para realçar sua beleza com naturalidade e transformar o atendimento em um momento só seu.</p>
-        <div class="hero-actions"><a class="btn" href="#experiencias">Conhecer experiências</a><a class="btn btn-ghost" href="https://wa.me/5555999761844?text=Ol%C3%A1%2C%20Rafaela!%20Gostaria%20de%20saber%20mais%20sobre%20os%20atendimentos." target="_blank" rel="noopener">Falar no WhatsApp</a></div>
+        <div class="hero-actions"><a class="btn" href="#headspa">Quero viver essa experiência</a><a class="btn btn-ghost" href="#experiencias">Conhecer o Studio</a></div>
         <div class="hero-badge">Pioneira em Head Spa na região central do Rio Grande do Sul</div>
       </div>
     </section>
 
-    <section class="intro section">
+    <section class="intro section textured">
       <div class="container narrow reveal">
         <span class="eyebrow dark">Muito além da estética</span>
         <h2>Um momento de pausa,<br><em>cuidado e presença.</em></h2>
@@ -43,7 +48,7 @@
       <div class="container">
         <div class="section-head reveal"><div><span class="eyebrow dark">Nossas experiências</span><h2>Escolha seu momento.</h2></div><p>Conheça algumas das experiências apresentadas pelo Studio e fale diretamente com a Rafaela para encontrar a opção ideal para você.</p></div>
         <div class="cards">
-          <article class="card feature reveal"><div class="card-image spa"></div><div class="card-copy"><span class="card-number">01 • EXPERIÊNCIA DE DESTAQUE</span><h3>Head Spa</h3><p>Um ritual de cuidado e relaxamento que transforma o atendimento em uma pausa completa. Conforto, atmosfera acolhedora e atenção aos detalhes fazem parte da experiência.</p><a href="https://wa.me/5555999761844?text=Ol%C3%A1%2C%20Rafaela!%20Gostaria%20de%20agendar%20uma%20experi%C3%AAncia%20de%20Head%20Spa." target="_blank" rel="noopener">Quero viver essa experiência →</a></div></article>
+          <article class="card feature reveal"><div class="card-image spa"></div><div class="card-copy"><span class="card-number">01 • EXPERIÊNCIA DE DESTAQUE</span><h3>Head Spa</h3><p>Um ritual de cuidado e relaxamento que transforma o atendimento em uma pausa completa. Conforto, atmosfera acolhedora e atenção aos detalhes fazem parte da experiência.</p><a href="#headspa">Descobrir a experiência →</a></div></article>
           <article class="card reveal"><div class="card-image brows"></div><div class="card-copy"><span class="card-number">02</span><h3>Brows</h3><p>Design, reparação e laminação para valorizar o olhar respeitando sua identidade e seus traços.</p><a href="https://wa.me/5555999761844?text=Ol%C3%A1%2C%20Rafaela!%20Quero%20saber%20mais%20sobre%20os%20procedimentos%20de%20Brows." target="_blank" rel="noopener">Quero saber mais →</a></div></article>
           <article class="card reveal"><div class="card-image skin"></div><div class="card-copy"><span class="card-number">03</span><h3>Skin Care</h3><p>Cuidados voltados para a pele combinando técnica, conforto e atenção individual.</p><a href="https://wa.me/5555999761844?text=Ol%C3%A1%2C%20Rafaela!%20Quero%20saber%20mais%20sobre%20Skin%20Care." target="_blank" rel="noopener">Quero saber mais →</a></div></article>
           <article class="card reveal"><div class="card-image lips"></div><div class="card-copy"><span class="card-number">04</span><h3>Hidragloss</h3><p>Experiência de cuidado labial voltada para hidratação, maciez e aparência saudável.</p><a href="https://wa.me/5555999761844?text=Ol%C3%A1%2C%20Rafaela!%20Quero%20saber%20mais%20sobre%20Hidragloss." target="_blank" rel="noopener">Quero saber mais →</a></div></article>
@@ -52,10 +57,34 @@
       </div>
     </section>
 
-    <section class="studio section" id="studio">
+    <section class="headspa-immersive" id="headspa">
+      <div class="headspa-shade"></div>
+      <div class="container headspa-content reveal">
+        <span class="eyebrow">Head Spa</span>
+        <h2>Feche os olhos<br><em>por um instante.</em></h2>
+        <p>Imagine luz baixa, aromas suaves, água morna, toque delicado e alguns minutos sem pressa. O Head Spa foi pensado para transformar cuidado em presença — e presença em bem-estar.</p>
+        <div class="headspa-details"><span>Relaxamento</span><span>Cuidado sensorial</span><span>Atmosfera acolhedora</span><span>Momento exclusivo</span></div>
+        <a class="btn" href="https://wa.me/5555999761844?text=Ol%C3%A1%2C%20Rafaela!%20Gostaria%20de%20viver%20a%20experi%C3%AAncia%20de%20Head%20Spa." target="_blank" rel="noopener">Quero viver essa experiência</a>
+      </div>
+    </section>
+
+    <section class="studio section textured" id="studio">
       <div class="container studio-grid">
         <div class="studio-copy reveal"><span class="eyebrow dark">O Studio</span><h2>Detalhes que fazem você se sentir acolhida.</h2><p>Atmosfera intimista, aromas, texturas e cuidado em cada etapa. A experiência começa antes mesmo do procedimento e continua até o último detalhe do atendimento.</p><ul class="checks"><li>Experiência sensorial</li><li>Atendimento personalizado</li><li>Ambiente acolhedor</li><li>Cuidado em cada detalhe</li></ul></div>
         <div class="studio-collage reveal"><div class="photo p1"></div><div class="photo p2"></div><div class="photo p3"></div></div>
+      </div>
+    </section>
+
+    <section class="gallery section" aria-label="Galeria editorial">
+      <div class="container">
+        <div class="section-head reveal"><div><span class="eyebrow dark">Atmosfera do Studio</span><h2>Beleza nos detalhes.</h2></div><p>Uma seleção editorial que traduz o clima de cuidado, elegância e bem-estar que inspira esta apresentação.</p></div>
+        <div class="editorial-grid">
+          <div class="editorial-item g1 reveal"></div>
+          <div class="editorial-item g2 reveal"></div>
+          <div class="editorial-copy reveal"><span class="eyebrow dark">Experiência</span><h3>Um espaço que convida a desacelerar.</h3><p>Do aroma ao toque, do atendimento à imagem, cada ponto de contato reforça a sensação de cuidado.</p></div>
+          <div class="editorial-item g3 reveal"></div>
+          <div class="editorial-item g4 reveal"></div>
+        </div>
       </div>
     </section>
 
@@ -70,11 +99,12 @@
       <div class="container positioning-box reveal"><span class="eyebrow">Uma presença à altura da experiência</span><h2>Do primeiro contato ao agendamento.</h2><p>Uma presença digital completa permite que novas clientes encontrem o Studio, conheçam as experiências com clareza e cheguem ao WhatsApp prontas para conversar sobre o atendimento ideal.</p><div class="positioning-points"><span>Encontrada no Google</span><span>Experiências organizadas</span><span>Contato direto</span><span>Instagram integrado</span></div></div>
     </section>
 
-    <section class="cta section" id="contato"><div class="container narrow reveal"><span class="eyebrow dark">Seu momento começa aqui</span><h2>Qual experiência combina com você hoje?</h2><p>Fale diretamente com o Studio e descubra o atendimento que mais faz sentido para o seu momento.</p><a class="btn dark-btn" href="https://wa.me/5555999761844?text=Ol%C3%A1%2C%20Rafaela!%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar%20um%20hor%C3%A1rio." target="_blank" rel="noopener">Agendar pelo WhatsApp</a></div></section>
+    <section class="cta section" id="contato"><div class="container narrow reveal"><span class="eyebrow dark">Seu momento começa aqui</span><h2>Qual experiência combina com você hoje?</h2><p>Fale diretamente com o Studio e descubra o atendimento que mais faz sentido para o seu momento.</p><a class="btn dark-btn" href="https://wa.me/5555999761844?text=Ol%C3%A1%2C%20Rafaela!%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar%20um%20hor%C3%A1rio." target="_blank" rel="noopener">Quero viver essa experiência</a></div></section>
   </main>
 
   <footer><div class="container footer-grid"><div><div class="brand footer-brand"><span class="brand-mark">RD</span><span><strong>Rafaela Dalmolin</strong><small>Studio</small></span></div><p>Beleza, bem-estar e autocuidado em São Gabriel, RS.</p></div><div><strong>Contato</strong><a href="https://instagram.com/studiorafaeladalmolin" target="_blank" rel="noopener">@studiorafaeladalmolin</a><a href="https://wa.me/5555999761844" target="_blank" rel="noopener">WhatsApp</a></div><div><strong>Localização</strong><span>São Gabriel • Rio Grande do Sul</span><small>Atendimento mediante agendamento.</small></div></div><div class="footer-bottom container">Demonstração conceitual preparada para o Studio Rafaela Dalmolin • Imagens editoriais ilustrativas</div></footer>
   <a class="floating-whatsapp" aria-label="WhatsApp" href="https://wa.me/5555999761844?text=Ol%C3%A1%2C%20Rafaela!%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio." target="_blank" rel="noopener">✦</a>
+  <a class="mobile-cta" href="https://wa.me/5555999761844?text=Ol%C3%A1%2C%20Rafaela!%20Vim%20pelo%20site%20e%20quero%20agendar%20uma%20experi%C3%AAncia." target="_blank" rel="noopener">Agendar pelo WhatsApp</a>
   <script src="script.js"></script>
 </body>
 </html>
