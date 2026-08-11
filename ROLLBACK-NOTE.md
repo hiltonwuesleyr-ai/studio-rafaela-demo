@@ -1,0 +1,1 @@
+Versão de demonstração restaurada para o estado anterior à integração dos Reels. Mantidas as imagens editoriais exemplares para apresentação inicial. O material original do Studio será solicitado e substituído após aprovação da proposta.
